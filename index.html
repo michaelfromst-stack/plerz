@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Canvas Image Processor</title>
+  <title>Lazy Image Loader Feed</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Image Effects Processor</h1>
-    <canvas id="canvas"></canvas>
-    <div class="controls">
-      <button onclick="applyFilter('grayscale')">Grayscale</button>
-      <button onclick="applyFilter('sepia')">Sepia</button>
-      <button onclick="applyFilter('invert')">Invert</button>
-      <button onclick="reset()">Reset</button>
+  <div class="gallery">
+    <h1>Lazy Loading Gallery Demo</h1>
+    <div class="grid">
+      <div class="card"><img class="lazy" data-src="https://picsum.photos/id/10/300/200" src="placeholder.png" alt="Card 1"></div>
+      <div class="card"><img class="lazy" data-src="https://picsum.photos/id/11/300/200" src="placeholder.png" alt="Card 2"></div>
+      <div class="card"><img class="lazy" data-src="https://picsum.photos/id/12/300/200" src="placeholder.png" alt="Card 3"></div>
+      <div class="card"><img class="lazy" data-src="https://picsum.photos/id/13/300/200" src="placeholder.png" alt="Card 4"></div>
     </div>
   </div>
-  <script src="image-util.js"></script>
+  <script src="lazy-load.js"></script>
 </body>
 </html>
