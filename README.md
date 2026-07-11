@@ -1,12 +1,12 @@
 # plerz
 
-Minimal canvas filter processing wrapper for web image rendering.
+Sleek and performance-oriented lazy loading helper for high-density image layouts.
 
-## Features
-- Ultra lightweight implementation
-- Pure vanilla JS operations
-- Zero performance overhead
-- Fully canvas-native filter functions
+## Implementation
+Uses modern `IntersectionObserver` API to detect element boundaries relative to the viewport and triggers asynchronous loading on demand.
 
-## Usage
-Just load the modules and call the initialization functions inside your layouts.
+## Installation
+Include the script inside your layout header:
+```html
+<script src="lazy-load.js" defer></script>
+```
