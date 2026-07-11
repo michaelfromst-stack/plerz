@@ -1,0 +1,12 @@
+{
+  "name": "plerz-lazyload",
+  "version": "2.1.0",
+  "description": "High-performance lazy loader for viewport-aware image loading.",
+  "main": "src/lazyload.js",
+  "scripts": {
+    "test": "node test/lazy.test.js"
+  },
+  "keywords": ["lazyloading", "performance", "viewport", "intersection-observer", "seo"],
+  "author": "michaelfromst-stack",
+  "license": "MIT"
+}
