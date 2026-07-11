@@ -1,12 +1,16 @@
 # plerz
 
-Sleek and performance-oriented lazy loading helper for high-density image layouts.
+High-performance lazy loader for viewport-aware image loading and page layout optimization.
 
-## Implementation
-Uses modern `IntersectionObserver` API to detect element boundaries relative to the viewport and triggers asynchronous loading on demand.
+## Advantages
+- **SEO Friendly**: Ensures all image resources are indexed appropriately.
+- **IntersectionObserver Native**: Heavy scroll event listeners are bypassed on modern viewports.
+- **Dual Mode**: Clean fallback to viewport math in case of legacy user-agent strings.
 
-## Installation
-Include the script inside your layout header:
-```html
-<script src="lazy-load.js" defer></script>
+## Usage
+```javascript
+import { PlerzLazyLoader } from 'plerz-lazyload';
+
+const loader = new PlerzLazyLoader({ rootMargin: '100px 0px' });
+loader.init();
 ```
